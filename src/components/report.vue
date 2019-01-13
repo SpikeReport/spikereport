@@ -2,22 +2,19 @@
     <div class="container">
         <div class="row">
         <form id="report">
-            <p>
-                In which country did you get, or suspect you got, spiked?
-                <br>
-                <input type="text" v-model="country">
-                {{country}}
-            </p>
-            <p>
-                In which city did you get, or suspect you got, spiked?<br>
-                <input type="text" v-model="city">
-                {{city}}
-            </p>
-            <p>
-                In which location did you get, or do you suspect, you got spiked?<br>
-                <input type="text" v-model="location">
-            </p>
-
+           <p>
+               Please enter the location where you got or you think you got spiked in the map. You can use 
+               the textbox below to search for a place.</p>
+               <!-- Insert google maps -->
+           <GmapMap ref="mapRef"
+            :center="{lat:10, lng:10}"
+            :zoom="7"
+            map-type-id="terrain"
+            style="width: 600px; height:400px"
+            ></GmapMap>
+            <gmap-autocomplete @places-changed="setPlace" 
+            class="form-input"></gmap-autocomplete>
+            
             <p>On which day (approximately) did you, or do you suspect, you got spiked?<br>
             <input type="date" v-model="date">
                 {{date}}
@@ -105,10 +102,18 @@
 </template>
 
 <script type="text/javascript">
-
 export default {
-
-};
+    // https://github.com/xkjyeah/vue-google-maps
+mounted(){
+    setPlace(place)
+    {
+        this.startLocation = {
+            lat: place.geometry.location.lat(),
+            lng: place.geometry.location.lng(),
+        };
+    }
+}
+}
 </script>
 
 <style>
