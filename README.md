@@ -1,30 +1,5 @@
 # spikereport
 
-## Project setup
-```
-npm install
-```
+# Introduction
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# spikereport
+The idea behind SpikeReport is to gather as much anonymous anecdotal evidence on drink spiking as possible.
