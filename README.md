@@ -1,27 +1,45 @@
 # SpikeReport
 
-SpikeReport is a software that is currently under development, which has the goal to allow drink spiking victims to speak out anonymously. Using anonymously gathered anecdotal evidence, SpikeReport tries to collect as much data as possible to determine the extent of this problem, in the hope to give
-research and law enforcement alike a collection of data to use for their efforts combatting this problem.
+<b>SpikeReport is currently under heavy development and not fit for produciton use, as it is in it's "pre-alpha" stage!</b>
 
+## Mission statement
 
-## Development stages of SpikeReport
+SpikeReport aims to be an online platform where victims, or people who suspect they were the victims, of "drink spiking" can report the offence online. By gathering such reports, we hope to acquire a set of data which can be used by research or law enforcement to gain insights on the problem of drink spiking, the areas in which it is commited most frequently, and so on. 
+Most "drink spiking" offenses are not reported to local law enforcement (we strongly encourage victims of "drink spiking" to seek out the help of law enforcement), which makes it difficult to comprehend the scope of this problem.
+We also aim to give victims of "drink spiking" a way to speak out without having to fear repercussion or "victim blaming". 
 
-The development on SpikeReport has just started. As SpikeReport aims to allow global anonymous reporting of drink spiking incidents, considerations towards modularizing translations have to be made.
+## Technical stuff
 
-Current goals of SpikeReport development are:
-1. Create a secure front-end which contains a survey to allow anonymous
-individuals who got spiked, or suspect they got spiked, to report the incident. 
-2. Create a secure backend to store the collected data
-3. Create a secure front-end for law enforcement or research, which
-visualizes the amount of incidents in a specific area and the frequency
-of drink spiking incidents in a given area. 
-4. Create a resource-pool on drink spiking which will allow users to anonymously inform themselves on the issue, and how to protect themselves.
+Currently we are developing the front-end, using Vue.js and Google Maps. The back-end side of things has not been considered yet.
+There will be some sort of database involved, although it is uncertain at this time which database should be used. 
+
+SpikeReport is aiming to create two tools: 
+1. The anonymous report form which is available to the public and can be used to report offences in regards to "drink spiking".
+2. A map, which for now will not be available to the public, which visualizes incidents of drink spiking (neither do we want to give criminals an idea where to commit their crimes, nor do we want to harm businesses). 
+
+Alongside, we are trying to create a repository of information in various languages on the problem of "drink spiking" and how an individual can protect themselves from such attacks.
 
 ## Considerations
 
-SpikeReport aims to be a global, centralized and anonymous platform for
-reporting incidents of drink spiking. Therefor, it is necessary to localize the application in as many languages as possible.
-To acquire data on locations where drink spiking occurs, SpikeReport
-is considering to use Google Places/Maps API as well as the Yelp API. 
+Current considerations on the front-end side of things are:
+1. How to deal with bots (captcha)?
+2. How to ensure anonymity even when using Google Maps?
+3. How to enable localization in a way that we do not end with 200+ different web pages?
+4. How to improve the web survey to get valueable information on the issue?
 
-For the front-end, currently Vue.js is heavily considered. 
+## Dependencies
+
+"dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.1",
+    "vue2-google-maps": "^0.10.5",
+    "vuex": "^3.0.1"
+    
+## What needs to be done?
+
+One of the most important things right now is to get the Google Maps to work properly. When entering a location, it should automatically jump to said location and create a marker.
+The other important thing to do is to get localization right, so anybody around the world can use the platform.
+Implementing a captcha is also very important to fend off bots.
+The UI could use some work, there are two image files which show how we imagine the UI for now. 
+Security tests are also welcome.
