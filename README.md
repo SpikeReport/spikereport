@@ -4,7 +4,7 @@
 
 ## Mission statement
 
-SpikeReport aims to be an online platform where victims, or people who suspect they were the victims, of "drink spiking" can report the offence online. By gathering such reports, we hope to acquire a set of data which can be used by research or law enforcement to gain insights on the problem of drink spiking, the areas in which it is commited most frequently, and so on. 
+SpikeReport aims to be an online platform where victims, or people who suspect they were the victims, of "drink spiking" can report the offence online. By gathering such reports, we hope to acquire a set of data which could then be used by research or law enforcement to gain insights on the problem of drink spiking, the areas in which it is commited most frequently, and so on. 
 Most "drink spiking" offenses are not reported to local law enforcement (we strongly encourage victims of "drink spiking" to seek out the help of law enforcement), which makes it difficult to comprehend the scope of this problem.
 We also aim to give victims of "drink spiking" a way to speak out without having to fear repercussion or "victim blaming". 
 
