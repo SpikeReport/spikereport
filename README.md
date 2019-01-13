@@ -1,8 +1,7 @@
 # SpikeReport
 
-SpikeReport is a software that is currently under development, which has the goal to allow drink spiking victims to speak out anonymously. Using anonymously gathered anecdotal evidence, SpikeReport tries to collect as much data as possible to determine the extent of this problem, giving
-research and law enforcement alike a collection of data that can be
-used to determine the extent of this problem.
+SpikeReport is a software that is currently under development, which has the goal to allow drink spiking victims to speak out anonymously. Using anonymously gathered anecdotal evidence, SpikeReport tries to collect as much data as possible to determine the extent of this problem, in the hope to give
+research and law enforcement alike a collection of data to use for their efforts combatting this problem.
 
 
 ## Development stages of SpikeReport
