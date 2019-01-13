@@ -1,5 +1,6 @@
 <template>
-    <div class="report">
+    <div class="container">
+        <div class="row">
         <form id="report">
             <p>
                 In which country did you get, or suspect you got, spiked?
@@ -54,8 +55,41 @@
                 </select>
             </p>
             <br>
+            
+            <p>Effects noticed during or after the incident<br>
+                <input type="checkbox" id="drowsy" name="drowsy">
+                <label for="drowsy"> Extreme Drowsiness</label><br>
+                <input type="checkbox" id="concentration" name="concentration">
+                <label for="concentration"> Inability to concentrate</label><br>
+                <input type="checkbox" id="breathing" name="breathing">
+                <label for="breathing"> Difficulty breathing</label><br>
+                <input type="checkbox" id="heartbeat_slow" name="heartbeat_slow">
+                <label for="heartbeat_slow"> Decrease in heartrate</label><br>
+                <input type="checkbox" id="hearbeat_fast" name="heartbeat_fast">
+                <label for="heartbeat_fast"> Increase in heartrate </label><br>
+                <input type="checkbox" id="disinhibition" name="disinhibition">
+                <label for="disinhibition"> Loss of inhibitions </label><br>
+                <input type="checkbox" id="drunkness_inc" name="drunkness_inc">
+                <label for="drunkness_inc"> Sudden increase in drunkness</label><br>
+                <input type="checkbox" id="drunkness_dec" name="drunkness_dec">
+                <label for="druckness_dec"> Did not notice drunkness </label><br>
+                <input type="checkbox" id="unconcious" name="unconcious">
+                <label for="unconcious">Loss of conciousness</label><br>
+                <input type="checkbox" id="vomiting" name="vomiting">
+                <label for="vomiting">Vomiting</label><br>
+                <input type="checkbox" id="emotion" name="emotion">
+                <label for="emotion">Loss of emotion</label><br>
+                <input type="checkbox" id="coordination" name="coordination">
+                <label for="coordination">Loss of coordination</label><br>
+                <input type="checkbox" id="euphoria" name="euphoria">
+                <label for="euphoria">Euphoria</label><br>
+                <input type="checkbox" id="grandiosity" name="grandiosity">
+                <label for="grandiosity">Sense of grandiosity("On top of the world")</label><br>
+                <input type="checkbox" id="amnesia" name="amnesia">
+                <label for="amnesia">Loss of memory (Blackout/Amnesia)</label><br>
+            </p>
             <p>Description of incident<br>
-                <textarea cols=20 rows=20>
+                <textarea cols=60 rows=20>
                 </textarea>
             </p>
 
@@ -66,6 +100,7 @@
 
 
         </form>
+        </div>
     </div>
 </template>
 
